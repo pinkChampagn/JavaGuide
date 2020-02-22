@@ -230,7 +230,7 @@ JDK 1.8 的时候，方法区（HotSpot 的永久代）被彻底移除了（JDK1
 
 既然运行时常量池是方法区的一部分，自然受到方法区内存的限制，当常量池无法再申请到内存时会抛出 OutOfMemoryError 错误。
 
-**JDK1.7 及之后版本的 JVM 已经将运行时常量池从方法区中移了出来，在 Java 堆（Heap）中开辟了一块区域存放运行时常量池。** 
+**JDK1.7 及之后版本的 JVM 已经将字符串常量池从方法区中移了出来，在 Java 堆（Heap）中开辟了一块区域存放字符串常量池。** 
 
 ![](http://my-blog-to-use.oss-cn-beijing.aliyuncs.com/18-9-14/26038433.jpg)
 ——图片来源：https://blog.csdn.net/wangbiao007/article/details/78545189
